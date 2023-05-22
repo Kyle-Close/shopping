@@ -18,8 +18,9 @@ function Header() {
                     <Link to={"/shop"}>
                         <img className="icon" src={shopIcon} width={"50px"} />
                     </Link>
-                    <Link to={"/checkout"}>
+                    <Link className="checkout-container" to={"/checkout"}>
                         <img className="icon checkout-icon" src={checkoutIcon} width={"45px"} />
+                        <div className="cart-count">2</div>
                     </Link>
                 </div>
             </div>

@@ -1,8 +1,14 @@
 import React from "react";
 
+import Sidebar from "./Sidebar"
+
+import "../styles/Shop.css"
+
 function Shop() {
     return (
-        <div>Shop Page</div>
+        <div className="shop-content">
+            <Sidebar />
+        </div>
     )
 }
 

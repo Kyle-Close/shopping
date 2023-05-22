@@ -25,11 +25,30 @@
     padding-bottom: 3px;
 }
 
-.icon {
+.icon, .checkout-container {
     transition: all 0.3s ease;
 }
 
-.icon:hover {
+.icon:hover, .checkout-container:hover{
     transform: scale(1.2);
     /* Increase the scale value to make the image bigger */
 }
+
+.checkout-container{
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -15px; /* Adjust the negative top value to move the circle further up */
+    right: -15px; /* Adjust the negative right value to move the circle further right */
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 0.9rem;  
+  }
+

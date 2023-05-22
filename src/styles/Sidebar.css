@@ -1,0 +1,25 @@
+.sidebar{
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.category:last-child{
+    border: none;
+}
+
+.category{
+    cursor: pointer;
+}
+
+.category:hover > h1{
+    color: green;
+}
+
+.expand-section:hover > h1{
+    color: green;
+}
+
+.child-category:hover > h5{
+    color: green;
+}
