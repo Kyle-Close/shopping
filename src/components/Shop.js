@@ -1,15 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import Sidebar from "./Sidebar"
+import Sidebar from './Sidebar';
+import Catalog from './Catalog';
 
-import "../styles/Shop.css"
+import '../styles/Shop.css';
 
 function Shop() {
-    return (
-        <div className="shop-content">
-            <Sidebar />
-        </div>
-    )
+	return (
+		<div className='shop-content'>
+			<Sidebar />
+			<Catalog />
+		</div>
+	);
 }
 
-export default Shop
+export default Shop;

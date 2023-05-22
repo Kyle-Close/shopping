@@ -1,54 +1,62 @@
 .sticky-header {
-    width: 100%;
-    max-width: 100%;
+	width: 100%;
+	max-width: 100%;
 }
 
-.sticky-header>.content {
-    position: sticky;
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
-    padding: 40px;
-    padding-bottom: 15px;
-    background-color: #498A47;
-    color: white;
-    align-items: flex-end;
+.title {
+	text-decoration: none;
+	font-size: 2rem;
+	color: white;
+}
+
+.sticky-header > .content {
+	position: sticky;
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	padding: 40px;
+	padding-bottom: 15px;
+	background-color: #498a47;
+	color: white;
+	align-items: flex-end;
 }
 
 .shop-checkout-icons {
-    display: flex;
-    gap: 15px;
+	display: flex;
+	gap: 15px;
 }
 
 .checkout-icon {
-    padding-bottom: 3px;
+	padding-bottom: 3px;
 }
 
-.icon, .checkout-container {
-    transition: all 0.3s ease;
+.icon,
+.checkout-container {
+	transition: all 0.3s ease;
 }
 
-.icon:hover, .checkout-container:hover{
-    transform: scale(1.2);
-    /* Increase the scale value to make the image bigger */
+.icon:hover,
+.checkout-container:hover {
+	transform: scale(1.2);
+	/* Increase the scale value to make the image bigger */
 }
 
-.checkout-container{
-    position: relative;
-    display: inline-block;
+.checkout-container {
+	position: relative;
+	display: inline-block;
 }
 
 .cart-count {
-    position: absolute;
-    top: -15px; /* Adjust the negative top value to move the circle further up */
-    right: -15px; /* Adjust the negative right value to move the circle further right */
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    background-color: white;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 0.9rem;  
-  }
-
+	position: absolute;
+	top: -15px; /* Adjust the negative top value to move the circle further up */
+	right: -15px; /* Adjust the negative right value to move the circle further right */
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	background-color: white;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 0.8rem;
+	color: black;
+}

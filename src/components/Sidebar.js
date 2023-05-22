@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/Sidebar.css';
 
@@ -38,25 +39,30 @@ function Sidebar() {
 
 function Category({ category }) {
 	return (
-		<div className='category'>
+		<Link
+			className='category'
+			to={`/shop/${category.name.toLowerCase()}`}
+		>
 			<img
 				src={tee}
 				width={'30px'}
 			/>
 			<h1>{category.name}</h1>
-		</div>
+		</Link>
 	);
 }
 
 function ChildCategory({ childName }) {
 	return (
-		<div className='child-category'>
-			<img
-				src={tee}
-				width={'25px'}
-			/>
-			<h5>{childName}</h5>
-		</div>
+		<Link to={`/shop/${childName.toLowerCase()}`}>
+			<div className='child-category'>
+				<img
+					src={tee}
+					width={'25px'}
+				/>
+				<h5>{childName}</h5>
+			</div>
+		</Link>
 	);
 }
 
