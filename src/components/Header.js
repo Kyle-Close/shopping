@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 import "../styles/Header.css"
 import companyIcon from "../img/company-icon.svg";
@@ -9,11 +10,17 @@ function Header() {
     return (
         <div className="sticky-header">
             <div className="content">
-                <img className="icon" src={companyIcon} width={'70px'} />
+                <Link to={"/"}>
+                    <img className="icon" src={companyIcon} width={'70px'} />
+                </Link>
                 <h1>The Divot Den</h1>
                 <div className="shop-checkout-icons">
-                    <img className="icon" src={shopIcon} width={"50px"} />
-                    <img className="icon checkout-icon" src={checkoutIcon} width={"45px"} />
+                    <Link to={"/shop"}>
+                        <img className="icon" src={shopIcon} width={"50px"} />
+                    </Link>
+                    <Link to={"/checkout"}>
+                        <img className="icon checkout-icon" src={checkoutIcon} width={"45px"} />
+                    </Link>
                 </div>
             </div>
         </div>
