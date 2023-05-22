@@ -36,5 +36,17 @@
     border: none;
     width: 150px;
     background-color: #498A47;
+    cursor: pointer;
+    transition: transform 0.3s;
   }
+
+  .shop-now-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Click animation */
+  .shop-now-button:active {
+    transform: scale(0.9);
+  }
+  
   
