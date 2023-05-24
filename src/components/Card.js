@@ -26,6 +26,7 @@ function Card(props) {
 						<input
 							className='product-counter'
 							type='number'
+							min={0}
 						/>
 						<img
 							className='add-to-bag-img'

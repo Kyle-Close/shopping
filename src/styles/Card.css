@@ -1,6 +1,12 @@
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	height: 32px; /* Adjust the value to your desired height */
+}
+
 .product-card {
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 }
 
 .card-bottom {
