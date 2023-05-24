@@ -1,0 +1,45 @@
+.product-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-bottom {
+	margin: 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-left,
+.card-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 5px;
+}
+
+.card-right > p {
+	font-size: 0.6rem;
+}
+
+.product-img {
+	width: 350px;
+}
+
+.product-counter {
+	width: 50px;
+	height: 25px;
+	text-align: center;
+	align-self: flex-end;
+}
+
+.add-to-bag-img {
+	width: 40px;
+}
+
+.star {
+	width: 20px;
+}
+
+.spinner-add {
+	display: flex;
+}

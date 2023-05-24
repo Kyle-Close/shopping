@@ -17,8 +17,12 @@ function App() {
 					element={<Home />}
 				/>
 				<Route
-					path='/shop/*'
-					element={<Shop />}
+					path='/shop'
+					element={<Shop />} // Display Shop component when there's no specific category
+				/>
+				<Route
+					path='/shop/:category'
+					element={<Shop />} // Display Shop component with specific category
 				/>
 				<Route
 					path='/checkout'
