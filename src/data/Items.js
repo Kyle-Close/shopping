@@ -36,6 +36,10 @@ import camo from '../img/bags/camo.jpg';
 import anyday from '../img/bags/anyday.jpg';
 import stand from '../img/bags/stand.jpg';
 
+// Balls
+import prov1 from '../img/balls/prov1.png'
+import noodle from '../img/balls/noodle.png'
+
 const items = [
 	{
 		name: 'Drivers',
@@ -272,6 +276,27 @@ const items = [
 				rating: '2',
 				reviews: '40',
 				src: stand,
+			},
+		],
+	},
+	{
+		name: 'Balls',
+		list: [
+			{
+				brand: 'Titelist',
+				model: 'Pro v1',
+				price: '70',
+				rating: '5',
+				reviews: '360',
+				src: prov1,
+			},
+			{
+				brand: 'Vice',
+				model: 'Pro Plus',
+				price: '50',
+				rating: '4',
+				reviews: '42',
+				src: noodle,
 			},
 		],
 	},
