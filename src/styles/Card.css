@@ -1,18 +1,16 @@
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-	height: 32px; /* Adjust the value to your desired height */
-}
+
 
 .product-card {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 2%;
+	max-width: 25%;
 }
 
 .card-bottom {
-	margin: 0 20px;
 	display: flex;
 	justify-content: space-between;
+	gap: 5%;
 }
 
 .card-left,
@@ -23,29 +21,49 @@ input[type='number']::-webkit-outer-spin-button {
 	gap: 5px;
 }
 
+.card-right{
+	align-items: flex-end;
+}
+
+.card-left{
+	font-size: 0.8vw;
+	flex-grow: 1;
+	white-space: nowrap;
+	max-width: 40%;
+}
+
 .card-right > p {
-	font-size: 0.6rem;
+	font-size: 0.8vw;
 }
 
 .product-img {
-	width: 350px;
+	max-width: 100%;
+	width: 100%;
 }
 
 .product-counter {
-	width: 50px;
-	height: 25px;
+	width: 35%;
+	height: 50%;
+	max-height: 50%;
 	text-align: center;
 	align-self: flex-end;
+	font-size: .6vw;
 }
 
 .add-to-bag-img {
-	width: 40px;
+	width: 23%;
+}
+
+.stars-container{
+	display: flex;
+	justify-content: flex-end;
 }
 
 .star {
-	width: 20px;
+	width: 10%;
 }
 
 .spinner-add {
 	display: flex;
+	justify-content: flex-end;
 }

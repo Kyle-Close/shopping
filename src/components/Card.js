@@ -17,7 +17,7 @@ function Card(props) {
 				<div className='card-left'>
 					<h6>{brand}</h6>
 					<h4>{model}</h4>
-					<h5>${price} CAD</h5>
+					<h5>${price}</h5>
 				</div>
 				<div className='card-right'>
 					<ReviewStars stars={rating} />
