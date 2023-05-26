@@ -58,6 +58,7 @@ const items = [
 				rating: '4',
 				reviews: '250',
 				src: stealth2plus,
+				id: "1"
 			},
 			{
 				brand: 'Wilson',
@@ -66,6 +67,7 @@ const items = [
 				rating: '3',
 				reviews: '470',
 				src: dynapower,
+				id: "2"
 			},
 			{
 				brand: 'Callaway',
@@ -74,6 +76,7 @@ const items = [
 				rating: '5',
 				reviews: '83',
 				src: paradym,
+				id: "3"
 			},
 			{
 				brand: 'Ping',
@@ -82,6 +85,7 @@ const items = [
 				rating: '4',
 				reviews: '291',
 				src: g430,
+				id: "4"
 			},
 		],
 	},
@@ -95,6 +99,7 @@ const items = [
 				rating: '5',
 				reviews: '439',
 				src: jpx,
+				id:"5"
 			},
 			{
 				brand: 'Srixon',
@@ -103,6 +108,7 @@ const items = [
 				rating: '3',
 				reviews: '240',
 				src: zx7,
+				id: "6"
 			},
 			{
 				brand: 'Takomo',
@@ -111,6 +117,7 @@ const items = [
 				rating: '3',
 				reviews: '140',
 				src: tg301,
+				id: "7"
 			},
 			{
 				brand: 'Ping',
@@ -119,6 +126,7 @@ const items = [
 				rating: '4',
 				reviews: '190',
 				src: i230,
+				id: "8"
 			},
 			{
 				brand: 'TaylorMade',
@@ -127,6 +135,7 @@ const items = [
 				rating: '5',
 				reviews: '350',
 				src: p970,
+				id: "9"
 			},
 		],
 	},
@@ -140,6 +149,7 @@ const items = [
 				rating: '4',
 				reviews: '99',
 				src: paradymWood,
+				id: "10"
 			},
 			{
 				brand: 'Cobra',
@@ -148,6 +158,7 @@ const items = [
 				rating: '3',
 				reviews: '39',
 				src: aerojet,
+				id: "11"
 			},
 			{
 				brand: 'Mizuno',
@@ -156,6 +167,7 @@ const items = [
 				rating: '2',
 				reviews: '11',
 				src: stz230,
+				id: "12"
 			},
 			{
 				brand: 'Titleist',
@@ -164,6 +176,7 @@ const items = [
 				rating: '4',
 				reviews: '99',
 				src: tsr2,
+				id: "13"
 			},
 		],
 	},
@@ -177,6 +190,7 @@ const items = [
 				rating: '5',
 				reviews: '173',
 				src: stz230Wood,
+				id: "14"
 			},
 			{
 				brand: 'PXG',
@@ -185,6 +199,7 @@ const items = [
 				rating: '2',
 				reviews: '89',
 				src: wood0211,
+				id: "15"
 			},
 			{
 				brand: 'Cobra',
@@ -193,6 +208,7 @@ const items = [
 				rating: '4',
 				reviews: '111',
 				src: kingTec,
+				id: "16"
 			},
 		],
 	},
@@ -206,6 +222,7 @@ const items = [
 				rating: '3',
 				reviews: '201',
 				src: hb,
+				id: "17"
 			},
 			{
 				brand: 'Ping',
@@ -214,6 +231,7 @@ const items = [
 				rating: '4',
 				reviews: '187',
 				src: newPing,
+				id: "18"
 			},
 			{
 				brand: 'Titleist',
@@ -222,6 +240,7 @@ const items = [
 				rating: '5',
 				reviews: '690',
 				src: scotty,
+				id: "19"
 			},
 			{
 				brand: 'Mizuno',
@@ -230,6 +249,7 @@ const items = [
 				rating: '4',
 				reviews: '210',
 				src: omoi,
+				id: "20"
 			},
 		],
 	},
@@ -243,6 +263,7 @@ const items = [
 				rating: '4',
 				reviews: '55',
 				src: staDry,
+				id: "21"
 			},
 			{
 				brand: 'Ogio',
@@ -251,6 +272,7 @@ const items = [
 				rating: '5',
 				reviews: '42',
 				src: woode,
+				id: "22"
 			},
 			{
 				brand: 'Sun Mountain',
@@ -259,6 +281,7 @@ const items = [
 				rating: '4',
 				reviews: '400',
 				src: maverick,
+				id: "23"
 			},
 			{
 				brand: 'PXG',
@@ -267,6 +290,7 @@ const items = [
 				rating: '3',
 				reviews: '230',
 				src: camo,
+				id: "24"
 			},
 			{
 				brand: 'Ghost',
@@ -275,6 +299,7 @@ const items = [
 				rating: '4',
 				reviews: '88',
 				src: anyday,
+				id: "25"
 			},
 			{
 				brand: 'Stix',
@@ -283,6 +308,7 @@ const items = [
 				rating: '2',
 				reviews: '40',
 				src: stand,
+				id: "26"
 			},
 		],
 	},
@@ -296,6 +322,7 @@ const items = [
 				rating: '5',
 				reviews: '360',
 				src: prov1,
+				id: "27"
 			},
 			{
 				brand: 'Vice',
@@ -304,6 +331,7 @@ const items = [
 				rating: '4',
 				reviews: '42',
 				src: noodle,
+				id: "28"
 			},
 			{
 				brand: 'Bridgestone',
@@ -312,6 +340,7 @@ const items = [
 				rating: '3',
 				reviews: '87',
 				src: e6,
+				id: "29"
 			},
 			{
 				brand: 'Callaway',
@@ -320,6 +349,7 @@ const items = [
 				rating: '4',
 				reviews: '111',
 				src: superSoft,
+				id: "30"
 			},
 		],
 	},
@@ -333,6 +363,7 @@ const items = [
 				rating: '4',
 				reviews: '30',
 				src: speaker,
+				id: "31"
 			},
 			{
 				brand: 'Tag Heuer',
@@ -341,6 +372,7 @@ const items = [
 				rating: '5',
 				reviews: '17',
 				src: watch,
+				id: "32"
 			},
 			{
 				brand: 'Nikon',
@@ -349,6 +381,7 @@ const items = [
 				rating: '5',
 				reviews: '65',
 				src: rangeFinder,
+				id: "33"
 			},
 		],
 	},

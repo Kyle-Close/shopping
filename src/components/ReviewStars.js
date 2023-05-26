@@ -11,6 +11,7 @@ function ReviewStars(props) {
 			<img
 				className='star'
 				src={filled}
+				key={'filled' + i} // added unique key
 			/>
 		);
 	}
@@ -20,6 +21,7 @@ function ReviewStars(props) {
 			<img
 				className='star'
 				src={empty}
+				key={'empty' + (stars.length)} // added unique key
 			/>
 		);
 	}

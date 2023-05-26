@@ -6,7 +6,7 @@ import Card from './Card';
 
 import '../styles/Catalog.css';
 
-function Catalog() {
+function Catalog(props) {
 	const { category } = useParams();
 
 	const thisItem = items.find((item) => item.name.toLowerCase() === category);
@@ -15,6 +15,7 @@ function Catalog() {
 		<Card
 			key={index}
 			list={item}
+			handleAddToCart={props.handleAddToCart}
 		/>
 	));
 

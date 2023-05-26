@@ -6,12 +6,12 @@ import Catalog from './Catalog';
 
 import '../styles/Shop.css';
 
-function Shop() {
+function Shop(props) {
 	const { category } = useParams();
 	return (
 		<div className='shop-content'>
 			<Sidebar />
-			{category && <Catalog />}
+			{category && <Catalog handleAddToCart={props.handleAddToCart}/>}
 		</div>
 	);
 }
