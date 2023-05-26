@@ -39,6 +39,8 @@ import stand from '../img/bags/stand.jpg';
 // Balls
 import prov1 from '../img/balls/prov1.png'
 import noodle from '../img/balls/noodle.png'
+import e6 from '../img/balls/bridgestone.jpeg'
+import superSoft from '../img/balls/supersoft.jpeg'
 
 const items = [
 	{
@@ -297,6 +299,22 @@ const items = [
 				rating: '4',
 				reviews: '42',
 				src: noodle,
+			},
+			{
+				brand: 'Bridgestone',
+				model: 'e6',
+				price: '30',
+				rating: '3',
+				reviews: '87',
+				src: e6,
+			},
+			{
+				brand: 'Callaway',
+				model: 'Supersoft',
+				price: '35',
+				rating: '4',
+				reviews: '111',
+				src: superSoft,
 			},
 		],
 	},
