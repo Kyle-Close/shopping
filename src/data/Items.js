@@ -42,6 +42,11 @@ import noodle from '../img/balls/noodle.png'
 import e6 from '../img/balls/bridgestone.jpeg'
 import superSoft from '../img/balls/supersoft.jpeg'
 
+// Tech
+import speaker from '../img/tech/speaker.jpg'
+import watch from '../img/tech/watch.png'
+import rangeFinder from '../img/tech/range-finder.jpg'
+
 const items = [
 	{
 		name: 'Drivers',
@@ -315,6 +320,35 @@ const items = [
 				rating: '4',
 				reviews: '111',
 				src: superSoft,
+			},
+		],
+	},
+	{
+		name: 'Golf Tech',
+		list: [
+			{
+				brand: 'Bushnell',
+				model: 'Speaker',
+				price: '199',
+				rating: '4',
+				reviews: '30',
+				src: speaker,
+			},
+			{
+				brand: 'Tag Heuer',
+				model: 'Watch',
+				price: '350',
+				rating: '5',
+				reviews: '17',
+				src: watch,
+			},
+			{
+				brand: 'Nikon',
+				model: 'Range Finder',
+				price: '530',
+				rating: '5',
+				reviews: '65',
+				src: rangeFinder,
 			},
 		],
 	},
