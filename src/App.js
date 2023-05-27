@@ -68,7 +68,7 @@ function App() {
 				/>
 				<Route
 					path='/checkout'
-					element={<Checkout />}
+					element={<Checkout cartItems={customerCart} />}
 				/>
 			</Routes>
 		</div>

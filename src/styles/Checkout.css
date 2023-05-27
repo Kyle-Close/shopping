@@ -1,6 +1,9 @@
 .checkout-container-section {
 	width: 75%;
 	display: flex;
+	align-self: center;
+	margin-top: 3%;
+	gap: 5%;
 }
 
 .checkout-total-section {
@@ -21,4 +24,44 @@
 	border: none;
 	border-radius: 8px;
 	background-color: #077512;
+}
+
+.checkout-items-section {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.checkout-item {
+	display: grid;
+	grid-template-columns: 200px repeat(3, 1fr);
+	padding-bottom: 5px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	gap: 2%;
+}
+
+.checkout-item > img {
+	width: 100%;
+	height: auto;
+}
+
+.checkout-item input {
+	width: 25%;
+}
+
+.checkout-item p {
+	font-size: 0.7rem;
+}
+
+.item-quantity-each,
+.item-total {
+	display: flex;
+	flex-direction: column;
+	gap: 5%;
+}
+
+.item-quantity-each p,
+.item-total p {
+	font-size: 0.8rem;
 }
