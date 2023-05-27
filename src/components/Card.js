@@ -54,11 +54,13 @@ function Card(props) {
 							min={0}
 							defaultValue={0}
 						/>
-						<img
-							className='add-to-bag-img'
-							src={addToBag}
-							onClick={onAddToCartClick}
-						/>
+						<button className='add-to-bag-button'>
+							<img
+								className='add-to-bag-img'
+								src={addToBag}
+								onClick={onAddToCartClick}
+							/>
+						</button>
 					</div>
 				</div>
 			</div>
