@@ -6,7 +6,7 @@ import companyIcon from '../img/company-icon.svg';
 import shopIcon from '../img/shop.svg';
 import checkoutIcon from '../img/checkout.svg';
 
-function Header() {
+function Header({ totalItemsInCart }) {
 	return (
 		<div className='sticky-header'>
 			<div className='content'>
@@ -24,7 +24,7 @@ function Header() {
 					The Divot Den
 				</Link>
 				<div className='shop-checkout-icons'>
-					<Link to={'/shop'}>
+					<Link to={'/shop/drivers'}>
 						<img
 							className='icon'
 							src={shopIcon}
@@ -40,7 +40,7 @@ function Header() {
 							src={checkoutIcon}
 							width={'45px'}
 						/>
-						<div className='cart-count'>99</div>
+						<div className='cart-count'>{totalItemsInCart}</div>
 					</Link>
 				</div>
 			</div>

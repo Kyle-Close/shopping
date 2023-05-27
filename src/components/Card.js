@@ -6,30 +6,33 @@ import addToBag from '../img/add-to-cart.svg';
 import '../styles/Card.css';
 import { parsePath } from 'react-router-dom';
 
-import Items from '../data/Items'
+import Items from '../data/Items';
 
 function Card(props) {
-	const { brand, model, price, rating, reviews, src, id } = props.list;
-	const {handleAddToCart: AddToCart} = props;
+	const [itemCount, setItemCount] = React.useState('0');
 
-	// On add to bag click
-	// 1. Get value from number box
-	// 2. If > 0 then get the item object
-	// 3. Call setCustomerCart with item and count
-	function onAddToCartClick(e){
+	const { brand, model, price, rating, reviews, src, id } = props.list;
+	const { handleAddToCart: AddToCart } = props;
+
+	function onAddToCartClick(e) {
 		let parentContainer = e.target.closest('.product-card');
 		const id = parentContainer.dataset.id;
-		const item = Items
-  			.map(item => item.list) // Flatten the array to access the 'list' arrays
-  			.flat()
-  			.find(obj => obj.id === id);
+		const item = Items.map((item) => item.list) // Flatten the array to access the 'list' arrays
+			.flat()
+			.find((obj) => obj.id === id);
 
-		AddToCart(item, 3)
+		AddToCart(item, itemCount);
 	}
 
+	function handleInputChange(event) {
+		setItemCount(event.target.value);
+	}
 
 	return (
-		<div className='product-card' data-id={id}>
+		<div
+			className='product-card'
+			data-id={id}
+		>
 			<img
 				className='product-img'
 				src={src}
@@ -45,9 +48,11 @@ function Card(props) {
 					<p>{reviews} Reviews</p>
 					<div className='spinner-add'>
 						<input
+							onChange={handleInputChange}
 							className='product-counter'
 							type='number'
 							min={0}
+							defaultValue={0}
 						/>
 						<img
 							className='add-to-bag-img'

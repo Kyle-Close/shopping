@@ -8,7 +8,7 @@ import tee from '../img/tee.svg';
 import expandArrow from '../img/expand-arrow.svg';
 
 function Sidebar() {
-	const [isExpanded, setIsExpanded] = React.useState(false);
+	const [isExpanded, setIsExpanded] = React.useState(true);
 
 	function handleClick() {
 		setIsExpanded((prev) => !prev);
