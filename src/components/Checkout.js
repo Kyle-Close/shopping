@@ -41,10 +41,10 @@ function Checkout({ cartItems }) {
 						<h6>Grand Total:</h6>
 					</div>
 					<div className='checkout-total-values'>
-						<h6>TBD</h6>
-						<h6>$99</h6>
-						<h6>$3000</h6>
-						<h6>$3099</h6>
+						<p>$20</p>
+						<p>$99</p>
+						<p>$3000</p>
+						<p>$3099</p>
 					</div>
 				</div>
 				<button className='checkout-button'>Checkout</button>
