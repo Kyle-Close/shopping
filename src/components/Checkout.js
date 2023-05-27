@@ -1,7 +1,17 @@
 import React from 'react';
 import '../styles/Checkout.css';
 
-const CheckoutItem = ({ item }) => {
+const CheckoutItem = ({ item, handleAddToCart }) => {
+	const [itemCount, setItemCount] = React.useState(item.count);
+
+	React.useEffect(() => {
+		handleAddToCart(item, itemCount);
+	}, [itemCount]);
+
+	function handleInputChange(event) {
+		setItemCount(event.target.value);
+	}
+
 	return (
 		<div className='checkout-item'>
 			<img
@@ -17,6 +27,7 @@ const CheckoutItem = ({ item }) => {
 				<input
 					type='number'
 					defaultValue={item.count}
+					onChange={handleInputChange}
 				/>
 				<h4>Each</h4>
 				<p>${item.price}</p>
@@ -30,17 +41,22 @@ const CheckoutItem = ({ item }) => {
 };
 
 const calculateSubtotal = (cartItems) => {
-	return cartItems.reduce((total, item) => total + item.price * item.count, 0);
+	let subtotal = cartItems.reduce(
+		(total, item) => total + item.price * item.count,
+		0
+	);
+	return Number(subtotal.toFixed(2));
 };
 
 const calculateTax = (subtotal) => {
-	return subtotal * 0.13;
+	let tax = subtotal * 0.13;
+	return Number(tax.toFixed(2));
 };
 
 const CheckoutTotalSection = ({ shippingCost, cartItems }) => {
 	const subtotal = calculateSubtotal(cartItems);
 	const tax = calculateTax(subtotal);
-	const grandTotal = subtotal + tax + shippingCost;
+	const grandTotal = (subtotal + tax + shippingCost).toFixed(2);
 
 	return (
 		<div className='checkout-total-section'>
@@ -48,7 +64,7 @@ const CheckoutTotalSection = ({ shippingCost, cartItems }) => {
 			<div className='checkout-total-values-section'>
 				<div className='checkout-total-headers'>
 					<h6>Shipping:</h6>
-					<h6>Tax:</h6>
+					<h6>Tax (13%):</h6>
 					<h6>Subtotal:</h6>
 					<h6>Grand Total:</h6>
 				</div>
@@ -64,14 +80,15 @@ const CheckoutTotalSection = ({ shippingCost, cartItems }) => {
 	);
 };
 
-const Checkout = ({ cartItems }) => {
-	const shippingCost = 20;
+const Checkout = ({ cartItems, handleAddToCart }) => {
 	const checkoutItems = cartItems.map((item, index) => (
 		<CheckoutItem
+			handleAddToCart={handleAddToCart}
 			key={index}
 			item={item}
 		/>
 	));
+	const shippingCost = checkoutItems.length ? 20 : 0;
 
 	return (
 		<div className='checkout-container-section'>
