@@ -10,7 +10,7 @@ function Header({ totalItemsInCart }) {
 	return (
 		<div className='sticky-header'>
 			<div className='content'>
-				<Link to={'/shopping'}>
+				<Link to={'/'}>
 					<img
 						className='icon'
 						src={companyIcon}
@@ -19,7 +19,7 @@ function Header({ totalItemsInCart }) {
 				</Link>
 				<Link
 					className='title'
-					to={'/shopping'}
+					to={'/'}
 				>
 					The Divot Den
 				</Link>

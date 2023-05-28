@@ -56,7 +56,7 @@ function App() {
 			<Header totalItemsInCart={totalItems} />
 			<Routes>
 				<Route
-					path='/shopping'
+					path='/'
 					element={<Home />}
 				/>
 				<Route
