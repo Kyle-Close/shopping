@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Checkout from './components/Checkout';
+import { HashRouter } from 'react-router-dom';
 
 import Items from './data/Items';
 
@@ -55,7 +56,7 @@ function App() {
 			<Header totalItemsInCart={totalItems} />
 			<Routes>
 				<Route
-					path='/shopping'
+					path='/'
 					element={<Home />}
 				/>
 				<Route
