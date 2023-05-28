@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping/static/css/main.59572bd1.css",
-    "main.js": "/shopping/static/js/main.ff1ded34.js",
+    "main.js": "/shopping/static/js/main.bb5a3a31.js",
     "static/media/home-background.jpg": "/shopping/static/media/home-background.d1ada6fd6deb71ce98e2.jpg",
     "static/media/noodle.png": "/shopping/static/media/noodle.e0f6012252c5b8b381cd.png",
     "static/media/prov1.png": "/shopping/static/media/prov1.4df32312b55d62ba53e1.png",
@@ -35,19 +35,19 @@
     "static/media/supersoft.jpeg": "/shopping/static/media/supersoft.820f7a062d1ee4029596.jpeg",
     "static/media/stadry.jpg": "/shopping/static/media/stadry.76c219a07151a1182ce6.jpg",
     "static/media/checkout.svg": "/shopping/static/media/checkout.dc03f2caaccb395fd35cef51c3a42423.svg",
-    "static/media/star-empty.svg": "/shopping/static/media/star-empty.cf7022aaf49e6fab3092d9297d4408f7.svg",
+    "static/media/star-empty.svg": "/shopping/static/media/star-empty.026551b773e1d2d07a13caf587018954.svg",
     "static/media/tee.svg": "/shopping/static/media/tee.751225b23c6928257530a7db35c54f65.svg",
     "static/media/company-icon.svg": "/shopping/static/media/company-icon.3e921f9d408653145a28d6dc0ab19243.svg",
     "static/media/shop.svg": "/shopping/static/media/shop.370230d54ba83404ab55f7891f4b5022.svg",
-    "static/media/star-filled.svg": "/shopping/static/media/star-filled.efbec37c131e49975a19734cf47158f1.svg",
-    "static/media/add-to-cart.svg": "/shopping/static/media/add-to-cart.867fd5bf861172cde91d53dd67d28d2d.svg",
+    "static/media/star-filled.svg": "/shopping/static/media/star-filled.46d5491f16764b834b42c20163f96730.svg",
+    "static/media/add-to-cart.svg": "/shopping/static/media/add-to-cart.f73f717bbc74e45c6d665c3380bc8005.svg",
     "index.html": "/shopping/index.html",
     "static/media/expand-arrow.svg": "/shopping/static/media/expand-arrow.a321dd6eba2e6709033c8d99bb65c9c8.svg",
     "main.59572bd1.css.map": "/shopping/static/css/main.59572bd1.css.map",
-    "main.ff1ded34.js.map": "/shopping/static/js/main.ff1ded34.js.map"
+    "main.bb5a3a31.js.map": "/shopping/static/js/main.bb5a3a31.js.map"
   },
   "entrypoints": [
     "static/css/main.59572bd1.css",
-    "static/js/main.ff1ded34.js"
+    "static/js/main.bb5a3a31.js"
   ]
 }
